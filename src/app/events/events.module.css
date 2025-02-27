@@ -1,1 +1,38 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 20px;
+	height: calc(100vh - 140px);
+	width: 100%;
+	overflow-x: hidden;
+}
+.title {
+	font-size: 2rem;
+	font-weight: 900;
+}
+.description {
+	font-size: 1rem;
+	text-align: justify;
+	margin-right: 50px;
+}
+.cardContainer {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
 
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+	.container {
+		align-items: center; /* Centre le contenu horizontalement */
+		text-align: center; /* Centre le texte */
+	}
+	.description {
+		margin-right: 0; /* Supprime la marge droite */
+	}
+	.cardContainer {
+		justify-content: center; /* Centre les cartes */
+	}
+}

@@ -1,1 +1,76 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #f4f8fb; /* Bleu pastel clair */
+	--foreground: #3c4c5f; /* Gris foncé apaisant */
+	--footerBackground: #aac9b8; /* Vert pastel doux */
+	--font-geist-sans: 'Geist Sans', sans-serif; /* Définir la police si nécessaire */
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #3c4c5f; /* Bleu foncé clair */
+		--foreground: #e3e6e8; /* Gris clair pour le texte en mode sombre */
+		--footerBackground: #7f9b95; /* Vert plus foncé pour le footer */
+	}
+}
+
+/* Base styles for fonts and spacing */
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-geist-sans), Arial, sans-serif;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--background);
+	color: var(--foreground);
+}
+
+.content {
+	flex: 1;
+	padding: 20px;
+	overflow-x: hidden;
+}
+
+.footer {
+	background-color: var(--footerBackground);
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-size: 16px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.navbar {
+		font-size: 16px;
+		padding: 8px;
+	}
+
+	.content {
+		padding: 10px;
+	}
+
+	.footer {
+		font-size: 14px;
+		padding: 8px;
+	}
+}
+
+@media (max-width: 480px) {
+	.navbar {
+		font-size: 14px;
+		padding: 6px;
+	}
+
+	.footer {
+		font-size: 12px;
+		padding: 6px;
+	}
+}
 

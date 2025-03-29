@@ -1,0 +1,60 @@
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    width: 80%;
+  }
+  
+  /* Style des éléments de formulaire (input, textarea, select) */
+  .container input,
+  .container textarea,
+  .container select {
+    padding: 20px;
+    background-color: var(--bgSoft);
+    border: none;
+    border-radius: 5px;
+    color: var(--textColor);
+    font-family: var(--font-geist-sans), Arial, sans-serif;
+    font-size: 1rem;
+  }
+  
+  /* Style des boutons */
+  .container button {
+    padding: 20px;
+    cursor: pointer;
+    background-color: #007bff; /* Bleu */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+  }
+  
+  /* Styles pour le titre */
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* Style des messages d'erreur */
+  .error {
+    font-size: 1rem;
+    font-weight: 500;
+    color: red;
+    padding-left: 20px;
+  }
+  
+  /* Style des messages de confirmation */
+  .confirmation {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(4, 133, 12);
+    padding: 20px;
+  }
+  

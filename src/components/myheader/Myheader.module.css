@@ -1,0 +1,16 @@
+.Myheader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	background-color: var(--background);
+	color: var(--foreground);
+	transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+	.Myheader {
+		flex-direction: column;
+		align-items: center;
+	}
+}

@@ -1,0 +1,23 @@
+@keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .marquee {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide 10s linear infinite;
+    font-size: 5rem; /* Ajustez cette valeur selon vos besoins */
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Ajustez cette valeur selon vos besoins */
+  }

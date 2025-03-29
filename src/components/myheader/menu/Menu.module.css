@@ -1,0 +1,77 @@
+/* Styles de base */
+.menu {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	padding: 15px 0;
+	position: relative;
+  }
+  
+  .menuList {
+	display: flex;
+	gap: 20px;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	align-items: center;
+  }
+  
+  /* Bouton menu burger - caché sur desktop */
+  .menuButton {
+	display: none;
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 5px;
+  }
+  
+  /* Menu mobile - styles de base */
+  .mobileMenu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 15px;
+	background: #181818;
+	width: 200px;
+	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(231, 227, 227, 0.1);
+	padding: 10px;
+	z-index: 100;
+  }
+  
+  .mobileMenu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+  }
+  
+  .mobileMenu li {
+	padding: 8px 10px;
+	text-align: center;
+	transition: background-color 0.2s;
+  }
+  
+  .mobileMenu li:hover {
+	background-color: #333;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+	.menuList {
+	  display: none; /* Cache le menu desktop */
+	}
+	
+	.menuButton {
+	  display: block; /* Affiche le bouton burger */
+	  position: static; /* Retire le positionnement absolu */
+	  margin-left: auto; /* Aligne à droite */
+	}
+	
+	.mobileMenu[open] {
+	  display: block; /* Affiche le menu mobile quand open=true */
+	}
+  }

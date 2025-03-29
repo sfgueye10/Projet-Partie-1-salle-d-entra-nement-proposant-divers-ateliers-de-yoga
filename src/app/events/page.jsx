@@ -16,4 +16,3 @@ export default async function PageEvents() {
   const initialEvents = await getServerEvents();
   return <ClientEvents initialEvents={initialEvents} />;
 }
-
